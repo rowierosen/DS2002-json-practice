@@ -23,7 +23,8 @@ for temp in "${temps[@]}"; do
 done
 
 #calculate and store average.  we have to add the additional bc command to actually compute the average, otherwise it will just show everything
-#as a math process and not the actual average
+#as a math process and not the actual average.  i had to download bc to use it after looking it up
+#sudo apt install bc
 avg=$(echo "$sum / $count" | bc)
 
 echo "Average Temperature: $avg"
